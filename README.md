@@ -53,3 +53,17 @@ Inicia los contenedores Docker utilizando docker-compose up --build.
 El servicio de pruebas de fuzz ejecutará automáticamente las pruebas de fuzz contra los microservicios.
 
 Una vez completadas las pruebas, puedes revisar el archivo `fuzz_test_logs.txt` para obtener los resultados detallados.
+
+## Resultados y Análisis de Seguridad
+
+Los resultados obtenidos a través de las pruebas de fuzzing proporcionaron una visión detallada sobre la robustez del proyecto:
+
+- Vulnerabilidades Identificadas: Se identificaron vulnerabilidades menores que fueron corregidas. Estas incluían errores de validación de entradas y manejo incorrecto de excepciones.
+- Mejoras Implementadas: Como resultado del análisis, se implementaron mejoras en la validación de datos y en el manejo de errores, aumentando la seguridad y estabilidad de los microservicios. Además, mejor control del tiempo de respuesta de las APIs
+- Revisión de Resultados: Se examinó el archivo fuzz_test_logs.txt para obtener un resumen de los resultados de las pruebas. Este archivo nos dio a conocer información sobre el número de actualizaciones, acciones realizadas y cualquier anomalía detectada durante las pruebas, que no fallaron en esta primera iteración, pero ante mayor flujo de usuarios, puede ser fundamental como prueba de estrés.
+
+## Conclusiones
+
+- La integración de pruebas Fuzz en el proyecto de microservicios permitió identificar y corregir vulnerabilidades que, de otro modo, podrían haber pasado desapercibidas. E
+- El uso de fuzzing continuo contribuye significativamente a la mejora de la seguridad y estabilidad del software, haciendo que la implementación de estas sea una práctica recomendable en cualquier proyecto de desarrollo de software seguro.
+- Se realizaron pruebas fuzz con un contenedor en python debido a la incompatibilidad de OSS FUZZ con TypeScript.
