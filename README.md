@@ -7,8 +7,8 @@ Este repositorio contiene una arquitectura de microservicios utilizando Docker, 
 - Base de Datos PostgreSQL: Utilizada por el microservicio msvc-cursos.
 - Base de Datos MySQL: Utilizada por el microservicio msvc-usuarios.
 - Microservicios:
-- - msvc-usuarios: Un microservicio para gestionar los datos de los usuarios.
-- - msvc-cursos: Un microservicio para gestionar los datos de los cursos.
+  - msvc-usuarios: Un microservicio para gestionar los datos de los usuarios.
+  - msvc-cursos: Un microservicio para gestionar los datos de los cursos.
 - Pruebas de Fuzz: Un servicio dedicado a realizar pruebas de fuzz en los microservicios.
 - Front-end Angular: Una aplicación frontend para interactuar con los microservicios.
 
